@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Casa de Oração</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="fotos/logo.jpeg" type="image/x-icon">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+}
+
+.bgimg {
+  background-position: center;
+  background-size: cover;
+  background-image: url("fotos/fachada.jpeg");
+  min-height: 75%;
+}
+
+.menu {
+  display: none;
+}
+</style>
+<style>
+.iframe-container {
+position: relative;
+overflow: hidden;
+width: 100%;
+padding-top: 80%;
+}
+.iframe-container iframe {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
+</style>
+</head>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">INÍCIO</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#nossa história" class="w3-button w3-block w3-black">NOSSA HISTÓRIA</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#eventos" class="w3-button w3-block w3-black">EVENTOS</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#onde estamos" class="w3-button w3-block w3-black">ONDE ESTAMOS</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    
+  </div>
+  <div class="w3-display-middle w3-center">
+    
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+   
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="nossa história">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">NOSSA HISTÓRIA</span></h5>
+    <p style="text-align: justify;">A Igreja Cristã Evangélica Casa de Oração em São Conrado Iniciou com um sonho dado por Deus em Junho 1997, mesmo sem possibilidades tínhamos a promessa de Deus e que o projeto de Deus não era pequeno. Iniciou se os cultos como congregação na sala de casa do casal Débora e Jair. Em Julho de 2008 fomos emancipados e com novo local para reunirmos e durante todo o tempo de existência temos passado por lutas e conquistas, mas com a certeza que em tudo Deus continua sendo o principal que merece toda honra e glória.</p>
+  
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p><i>"E conhecereis a verdade, e a verdade vos libertará. João 8:32."</i></p>
+     
+    </div>
+    <img src="fotos/interno.jpeg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Horários de Funcionamento:</strong> Quarta-feira: 19:30hs / Domingo: 08:30hs e 19:00hs</p>
+    <p><strong>Endereço:</strong>  Rua: Piriquito, S/N, São conrado, Cariacica / ES</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="eventos">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EVENTOS</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Infantil');" id="myLink">
+        <div class="w3-col s6 tablink">MINISTÉRIO INFANTIL</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Orquestra');">
+        <div class="w3-col s6 tablink">ORQUESTRA</div>
+      </a>
+    </div>
+
+    <div id="Infantil" class="w3-container menu w3-padding-48 w3-card">
+      <h5>MOMENTO LÚDICO</h5>
+      <p class="w3-text-grey">Nos dias de momento lúdico, as crianças vivenciam experiências adequadas à sua idade</p>
+      <img src="fotos/infantil.jpeg" alt="infantil" style="width:100%;max-width:1000px" class="w3-margin-top">
+    </div>
+
+    <div id="Orquestra" class="w3-container menu w3-padding-48 w3-card">
+      <h5>ORQUESTRA</h5>
+      <p class="w3-text-grey">Para proporcionar um momento de integração, há ensaios e apresentação da orquestra.</p>
+      <img src="fotos/orquestra.jpeg" alt="orquestra" style="width:100%;max-width:1000px;" class="w3-margin-top">
+    </div> 
+
+    <img src="fotos/interno1.jpeg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="onde estamos" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px;">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">ONDE ESTAMOS</span></h5>
+      <div class="w3-container w3-padding-32">
+        <div class="w3-container">
+          <div class="iframe-container w3-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.8930226769157!2d-40.37630368507864!3d-20.346037586372145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb83ea395c2d5b1%3A0xcc78f61c838d269!2sR.%20Helena%20Almeida%20Santos%20-%20S%C3%A3o%20Conrado%2C%20Cariacica%20-%20ES!5e0!3m2!1spt-BR!2sbr!4v1685554710608!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+
+    <p style="text-align: justify;"><span class="w3-tag">PARA SUA INFORMAÇÃO!</span> A igreja fornece recursos e apoio para familias, incluindo aconselhamento familiar, programas para crianças e jovens e psicólogos da igreja local.</p>
+    <p><strong>Fale Conosco</strong> e nos envie uma mensagem:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome" required name="Nome"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="E-mail" required name="E-mail"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Telefone" required name="Telefone" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Mensagem" required name="Mensagem"></p>
+      <p><button class="w3-button w3-black" type="submit">ENVIAR MENSAGEM</button></p>
+    </form>
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <div>
+    <button class="w3-button w3-black w3-round-xxlarge"> 
+      <a href="https://obreiros.com/mensagem/mensagems">Mensagens</a>
+    </button>
+  </div>
+  <p>Criado por <a href="https://www.instagram.com/invites/contact/?i=1hxm6a0xb0qyl&utm_content=3ecgcv2"  title="Thaís 
+Mendes" target="_blank" class="w3-hover-text-green">Thaís Mendes</a></p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
